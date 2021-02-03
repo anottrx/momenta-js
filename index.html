@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Moment</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="moment.css" />
+    </head>
+    <body>
+        <span id="imgcolor" type="button" value="images">🎨</span>
+        <div class="js-weather"></div>
+        
+        <span class="js-clock"></span>      
+        <span type="button" id="ampm" value="24">⏰</span>
+
+        <div class="js-user">
+            <span id="helloPrint"></span>
+            <input id="userNameInput" type="text" />
+            <span id="namePrint"></span>
+            <span id="enterBtn">📝</span>
+            <span id="changeBtn">🖋</span>
+        </div>
+
+        <div class="js-todo">
+            <form class="js-taskForm">
+                <br>
+                <span id="taskTitle">Tasks</span>
+                <br><br>
+                <input id="task" type="text" placeholder="to do" maxlength="50"/>         
+            </form>
+            <br>
+            <span style="font-weight:bold;">To Do</span>
+            <ul class="js-pendingList"></ul>
+            <br>
+            <span style="font-weight:bold;">Done</span>
+            <ul class="js-finishedList"></ul>
+        </div>
+
+        <script src="clock.js"></script>
+        <script src="user.js"></script>
+        <script src="todo.js"></script>
+        <script src="background.js"></script>
+        <script src="weather.js"></script>
+    </body>
+</html>
